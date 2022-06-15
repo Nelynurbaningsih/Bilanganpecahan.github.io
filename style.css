@@ -1,0 +1,148 @@
+/* Google Fonts Import link */
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200;400;700;900 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: #839AA8;
+    transition: left 0.4s ease;
+}
+.sidebar .text{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+}
+.navbar{
+    background: #839AA8;
+    padding: 30px;
+}
+.main{
+    height: 100vh;
+    background: #D3EBCD;
+}
+.main h1{
+    text-align: center;
+    margin-top: 10px;
+}
+.main p{
+    text-align: center;
+    margin-top: 20px;
+}
+.main h3{
+    text-align: center;
+    margin-top: 20px;
+}
+nav ul{
+    background: #AEDBCE;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    overflow-y: scroll;
+}
+nav ul li{
+   line-height: 50px;
+   border-bottom: 1px solid rgba(255,255,255,0.1); 
+}
+nav ul li a{
+   color: #635666; 
+   text-decoration: none;
+   font-size: 17px;
+   padding-left: 40px;
+   font-weight: 500;
+   display: block;
+   width: 100%;
+   border-left: 3px solid transparent;
+}
+nav ul li a:hover{
+    color: #AEDBCE;
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+nav ul ul{
+    position: static;
+    display: none;
+}
+    display: block;
+}
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;   
+}
+nav ul ul li a{
+    position: relative;
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 80px;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 27px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    margin: 5px 30px;
+    border: 5px solid black;
+    border-radius: 5px;
+    background: black;
+    transition: all .5s ease;
+}
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    margin-left: 260px;
+    opacity: 1;
+    visibility: hidden;
+}
+#check:checked ~ label #cancel{
+    margin-left: 260px;
+    opacity: 1;
+    visibility: visible;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #DCDCDC;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #999;
+}
+.home-content{
+    height: 100vh;
+    background: #D3EBCD;
+}
+.home-content h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.home-content p {
+    text-align: center;
+    margin-top: 20px;
+}
